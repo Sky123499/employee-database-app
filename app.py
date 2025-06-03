@@ -81,7 +81,7 @@ def AddEmp():
 def GetEmp():
     return render_template("getemp.html", color=color_codes[COLOR])
 
-
+#fetching data from employee
 @app.route("/fetchdata", methods=['GET','POST'])
 def FetchData():
     emp_id = request.form['emp_id']
