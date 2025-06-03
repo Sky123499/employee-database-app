@@ -1,3 +1,4 @@
+#Importing all the libraries
 from flask import Flask, render_template, request
 from pymysql import connections
 import os
@@ -24,7 +25,7 @@ db_conn = connections.Connection(
     
 )
 output = {}
-table = 'employee';
+table = 'employee'; #Storing the db into table called employee
 
 # Define the supported color codes
 color_codes = {
